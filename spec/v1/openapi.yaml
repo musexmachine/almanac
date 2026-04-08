@@ -1,0 +1,33 @@
+openapi: 3.1.1
+info:
+  title: Almanac API
+  version: v1
+  summary: Canonical API contract for Almanac v1
+servers:
+  - url: /v1
+paths:
+  /health:
+    get:
+      summary: Health check
+      operationId: getHealth
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: object
+                    properties:
+                      status:
+                        type: string
+                        const: ok
+                  error:
+                    type:
+                      - 'null'
+                      - object
+                  meta:
+                    type: object
+components: {}
