@@ -1,0 +1,43 @@
+source:
+  github_login: droxey
+  include_installed_orgs: true
+  exclude_org_prefixes:
+    - make-school
+
+discovery:
+  include_public_contributions: true
+  include_private_uninstalled_org_contributions: false
+  exclude_pure_forks_without_meaningful_commits: true
+
+render:
+  h1_from_profile: true
+  year_grouping: last_committed_year_by_user
+  commit_count_mode: user_only
+
+output:
+  target_repo: musexmachine/almanac
+  branch: main
+  root_path: .
+  markdown_file: PROJECTS.md
+  csv_file: projects.csv
+  json_file: projects.json
+  pdf_file: projects.pdf
+
+analysis:
+  enabled: true
+  workspace:
+    mode: local
+    root_path: /srv/dev-mirror/active
+    layout: owner-repo
+    keep_repos_updated: true
+    sync_strategy: fetch-and-fast-forward
+    delete_missing_repos: false
+  watch:
+    enabled: true
+    debounce_seconds: 15
+    full_rescan_interval: 1h
+  analyzers:
+    metadata: true
+    readme_summary: true
+    language_stats: true
+    repo_health: true
