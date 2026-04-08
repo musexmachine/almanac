@@ -1,0 +1,23 @@
+ownership_class:
+  - mine
+  - collab
+
+visibility_scope:
+  - public
+  - private
+
+artifact_kind:
+  - markdown
+  - csv
+  - json
+  - pdf
+
+plan_type:
+  - free
+  - lifetime
+
+publication_status:
+  - pending
+  - published
+  - failed
+  - skipped
