@@ -5,7 +5,7 @@ This is the execution checklist for agents.
 ## Milestone 0 — Bootstrap the repo, standard, and scaffold
 
 ### Repo and governance
-- [ ] replace placeholder `README.md` with real bootstrap README
+- [x] replace placeholder `README.md` with real bootstrap README
 - [ ] add `CONTRIBUTING.md`
 - [ ] add `SECURITY.md`
 - [ ] add `CODE_OF_CONDUCT.md`

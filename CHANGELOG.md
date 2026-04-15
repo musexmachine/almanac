@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+### Added
+- Replaced the placeholder root `README.md` with a bootstrap README that explains Almanac's purpose, current scaffold state, repository layout, and validation commands.
+
 ### Changed
 - Almanac now treats **persistent watched-folder analysis** as a first-class product capability, not just a side effect of repository inventory generation.
 - The core purpose of repository collection is now explicitly defined as maintaining a **continuously updated watched workspace** that mirrors selected repositories and supports analysis against the real filesystem mirror.
